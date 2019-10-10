@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
     public float speed = 15f;
     public float xRange = 15.0f;
 
+    public GameObject projectilePrefab;
+
 
     // Update is called once per frame
     void Update()
@@ -23,5 +25,10 @@ public class PlayerController : MonoBehaviour
         }
         horizontalInput = Input.GetAxis("Horizontal");
         transform.Translate(Vector3.right * Time.deltaTime * horizontalInput * speed);
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+        }
     }
 }
