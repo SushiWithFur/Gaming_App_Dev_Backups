@@ -419,8 +419,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 45
-  orthographic: 0
-  orthographic size: 10
+  orthographic: 1
+  orthographic size: 13
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -607,7 +607,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontalInput: 0
   speed: 20
-  xRange: 12
+  xRange: 20
   projectilePrefab: {fileID: 3872757572673070164, guid: 3a767e6e90b8f414ca0c414644e8af37,
     type: 3}
 --- !u!1 &1590138454
