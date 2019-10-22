@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8232632379866820157}
   - component: {fileID: -2482810457218297300}
   - component: {fileID: 5653875615422099517}
+  - component: {fileID: 1135055380930717526}
   m_Layer: 0
   m_Name: Animal_Chicken_White
   m_TagString: Untagged
@@ -94,11 +95,23 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8232632378030295144}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 9.267009, y: 17.477594, z: 21.074636}
   m_Center: {x: 0.03178351, y: 7.993166, z: 1.3665304}
+--- !u!114 &1135055380930717526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8232632378030295144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 325c5d7d2750b411ba04e8385a51eb21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8232632378030301954
 GameObject:
   m_ObjectHideFlags: 0
