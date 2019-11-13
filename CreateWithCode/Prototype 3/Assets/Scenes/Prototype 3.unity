@@ -546,7 +546,7 @@ MonoBehaviour:
   gravityModifier: 2
   isOnGround: 1
   gameOver: 0
-  explosionParticle: {fileID: 0}
+  explosionParticle: {fileID: 1692223063}
 --- !u!54 &1459305320
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -581,6 +581,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: c14bb5ce28dbb7442a2f79d8b6a061ce,
     type: 3}
   m_PrefabInstance: {fileID: 456026356}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1692223063 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 9125212449759046732, guid: cb7cd9b0c56a24d49a40784bd3203ae6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1912019246}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1912019246
 PrefabInstance:
