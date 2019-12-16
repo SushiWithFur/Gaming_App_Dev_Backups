@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
     {
         playerRb = GetComponent<Rigidbody>();
         focalPoint = GameObject.Find("Focal Point");
-     
+
 
     }
     // Update is called once per frame
@@ -37,14 +37,14 @@ public class PlayerController : MonoBehaviour
             powerupIndicator.gameObject.SetActive(true);
         }
 
-         IEnumerator PowerupCountdownRoutine()
+        IEnumerator PowerupCountdownRoutine()
         {
             yield return new WaitForSeconds(7);
             hasPowerup = false;
             powerupIndicator.gameObject.SetActive(false);
         }
 
-            
+
     }
 
     private void OnCollisionEnter(Collision collision)

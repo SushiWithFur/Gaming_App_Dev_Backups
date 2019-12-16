@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 4052445}
   - component: {fileID: 4052444}
   - component: {fileID: 4052449}
+  - component: {fileID: 4052450}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -245,6 +246,22 @@ MonoBehaviour:
   speed: 5
   hasPowerup: 0
   powerupIndicator: {fileID: 1169356424}
+--- !u!114 &4052450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4052443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc2fc90d109414f67b1e0bcda2f439cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  hasPowerup: 0
+  powerupIndicator: {fileID: 1758629138285362, guid: 11a653b9169986c4f9436a3002fb4516,
+    type: 3}
 --- !u!1 &88696414
 GameObject:
   m_ObjectHideFlags: 0
@@ -274,7 +291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 673954d5721c043c6886a65142b8ff34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 50
+  rotationSpeed: 15
 --- !u!4 &88696416
 Transform:
   m_ObjectHideFlags: 0
@@ -393,8 +410,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58fbde38ff96142129f8a3e069a6dbd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 2569388900191270822, guid: d740ba7965cbf4a2bab030d41f264b0b,
-    type: 3}
 --- !u!4 &944333328
 Transform:
   m_ObjectHideFlags: 0
