@@ -5,8 +5,10 @@ using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+
 public class GameManager : MonoBehaviour
 {
+
     public List<GameObject> targets;
     private float spawnRate = 1.0f;
     private int score;
@@ -17,32 +19,34 @@ public class GameManager : MonoBehaviour
     public GameObject titleScreen;
 
 
+
     // Start is called before the first frame update
     void Start()
     {
-            
+
+    }
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        restartButton.gameObject.SetActive(true);
     }
 
     public void StartGame(int difficulty)
     {
-        spawnRate /= difficulty;
         isGameActive = true;
         score = 0;
         StartCoroutine(SpawnTarget());
         UpdateScore(0);
+        scoreText.text = "Score: " + score; UpdateScore(0);
         titleScreen.gameObject.SetActive(false);
+        spawnRate /= difficulty;
+
     }
 
     public void GameOver()
     {
-        isGameActive = false;
         gameOverText.gameObject.SetActive(true);
-        restartButton.gameObject.SetActive(true);
-    }
-    
-    public void RestartGame()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        isGameActive = false;
     }
 
     IEnumerator SpawnTarget()
@@ -54,16 +58,13 @@ public class GameManager : MonoBehaviour
             Instantiate(targets[index]);
             UpdateScore(5);
         }
-
     }
+
     public void UpdateScore(int scoreToAdd)
     {
         score += scoreToAdd;
         scoreText.text = "Score: " + score;
     }
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }
